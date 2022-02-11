@@ -1,0 +1,23 @@
+{
+  "name": "lbtt-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/calculator.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominikacookies/lbtt-calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dominikacookies/lbtt-calculator/issues"
+  },
+  "homepage": "https://github.com/dominikacookies/lbtt-calculator#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
