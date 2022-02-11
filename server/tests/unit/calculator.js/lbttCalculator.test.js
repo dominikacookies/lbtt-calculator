@@ -1,4 +1,4 @@
-const { lbttCalculator } = require("../../../calculator");
+const { lbttCalculator } = require("../../../lbttCalculator");
 
 test("returns correct lbtt rate for properties valued less than £145,000", () => {
   expect(lbttCalculator(145000)).toBe(0);
