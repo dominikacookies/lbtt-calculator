@@ -1,6 +1,7 @@
 lbttCalculator = (propertyPrice) => {
-  if (!propertyPrice) throw "Please provide a property price.";
-  if (isNaN(propertyPrice)) throw "Please provide a number";
+  if (!propertyPrice) throw new Error("Please provide a property price.");
+  if (isNaN(propertyPrice))
+    throw new TypeError("Please provide a property price of type number.");
 
   if (propertyPrice < 145000.01) return 0;
   if (propertyPrice > 145000.0 && propertyPrice <= 250000.0)
@@ -33,7 +34,5 @@ lbttCalculator = (propertyPrice) => {
 
   //   return propertyPrice * lbttRate;
 };
-
-console.log(lbttCalculator(145600));
 
 module.exports = { lbttCalculator };
